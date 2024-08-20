@@ -127,7 +127,7 @@ while True:
     try:
         # 지금 한국 시간
         now = datetime.now(timezone('Asia/Seoul'))
-        
+        prev_day = now.day  # prev_day 변수를 현재 날짜로 초기화
         # 하루에 한번 작동하는 save 변수 초기화
         if prev_day != now.day:
             prev_day = now.day
