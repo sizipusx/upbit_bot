@@ -88,10 +88,10 @@ def get_yesterday_ma15(ticker):
 
 # 객체 생성
 load_dotenv()
-access = os.getenv("UPBIT_ACCESS")
-secret = os.getenv("UPBIT_SECRET")
+access = "mOgyE35MopYam0A1NQzDUlNAHIPIMZipLQZFP1UR"
+secret = "dYmix3y5bWCdYeBdmulhlOapauKYjIxxQ62Ocv0I"
 upbit = pyupbit.Upbit(access, secret)
-token = os.getenv("TELEGRAM_TOKEN")
+token = "7482215767:AAE61ON-qNhlb-xifVcZPiZ33Ss-R_ANeAA"
 mc = "@Crypto_expobot"
 bot = telegram.Bot(token)
 df = pd.read_csv('dataset.csv')
@@ -100,7 +100,7 @@ df = pd.read_csv('dataset.csv')
 coin_list = ["KRW-BTC", "KRW-ETH", "KRW-DOGE"]
 n = len(coin_list)
 percent_list = [0.05] * n
-INF = float('inf')
+INF = 500000
 skip_list = []
 money_list = [0] * n
 op_mode = [False] * n
