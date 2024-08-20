@@ -9,11 +9,11 @@ import pandas as pd
 
 # 필요 API KEY load
 load_dotenv()
-access = os.getenv('UPBIT_API_ACCESS_KEY')
-secret = os.getenv('UPBIT_API_SECRET_KEY')
+access = "mOgyE35MopYam0A1NQzDUlNAHIPIMZipLQZFP1UR"
+secret = "dYmix3y5bWCdYeBdmulhlOapauKYjIxxQ62Ocv0I"
 upbit = pyupbit.Upbit(access, secret)
-token = os.getenv('TELEGRAM_API_TOKEN_KEY')
-mc = os.getenv('TELEGRAM_API_MC')
+token = "7482215767:AAE61ON-qNhlb-xifVcZPiZ33Ss-R_ANeAA"
+mc = "@Crypto_expobot"
 bot = telegram.Bot(token)
 df = pd.read_csv('check_dataset.csv')
 
