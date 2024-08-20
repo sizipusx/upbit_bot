@@ -79,11 +79,11 @@ def get_yesterday_ma15(ticker):
 
 # 객체 생성
 load_dotenv()
-access = "여기에 upbit-access-key 넣어주세요"
-secret = "여기에 upbit-secret-key 넣어주세요"
+access = "mOgyE35MopYam0A1NQzDUlNAHIPIMZipLQZFP1UR"
+secret = "dYmix3y5bWCdYeBdmulhlOapauKYjIxxQ62Ocv0I"
 upbit = pyupbit.Upbit(access, secret)
-token = "여기에 telegram-token-key 넣어주세요"
-mc = "여기에 telegram-mc-key 넣어주세요"
+token = "7482215767:AAE61ON-qNhlb-xifVcZPiZ33Ss-R_ANeAA"
+mc = "@Crypto_expobot"
 bot = telegram.Bot(token)
 df = pd.read_csv('dataset.csv')
 df2 = pd.DataFrame(columns=['date','jonbeo','auto_upbit','difference_jonbeo_autoupbit'])
@@ -92,7 +92,7 @@ df2 = pd.DataFrame(columns=['date','jonbeo','auto_upbit','difference_jonbeo_auto
 coin_list = ["KRW-BTC", "KRW-ETH", "KRW-DOGE"]
 n = len(coin_list)
 percent_list = [0.05]*n # 가진 돈의 5프로씩만 투자함
-INF = 1000000000000
+INF = 500000
 skip_list = []
 n = len(coin_list)
 money_list = [0]*(n)
